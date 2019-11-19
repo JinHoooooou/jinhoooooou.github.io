@@ -201,7 +201,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # 첫 페이지에 보여줄 최근 게시물 갯수
 paginate_path: /page:num/
-timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # testhttps://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
