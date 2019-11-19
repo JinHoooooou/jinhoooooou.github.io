@@ -9,8 +9,8 @@ main:
     url : /categories/
   - title : "Tags"
     url : /tags/
-  - title : "Blog"
-    url : /categories/blog
+  - title : "TIL"
+    url : /categories/TIL
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
