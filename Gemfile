@@ -1,3 +1,3 @@
 source "https://rubygems.org"
 gemspec
-gem 'tzinfo-data'
+gem 'tzinfo-data' # timezone for asia/seoul
