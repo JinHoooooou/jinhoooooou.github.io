@@ -90,6 +90,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 : "/assets/images/profile.jpg" #공유했을때 이미지 
+og_description           : "TIL Blog"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
