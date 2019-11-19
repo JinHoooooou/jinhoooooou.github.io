@@ -269,7 +269,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: true # 댓글기능 true
-      share: true
+      share: false
       related: true
 
   # _pages
@@ -281,5 +281,5 @@ defaults:
       author_profile: true
       read_time: false
       comments: false
-      share: true
+      share: false
       related: false
