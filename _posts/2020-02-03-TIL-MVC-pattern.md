@@ -1,5 +1,5 @@
 ---
-title: "[MVC] MVC패턴 공부"
+title: "[MVC] MVC패턴1"
 excerpt: "Model, View, Controller"
 
 categories:
