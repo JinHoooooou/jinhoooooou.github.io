@@ -1,6 +1,6 @@
 ---
 title: "Codewars 문제풀기 (03/01)"
-excerpt: ""
+excerpt: "Mumbling"
 
 categories:
  - Blog

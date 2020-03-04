@@ -1,6 +1,6 @@
 ---
 title: "Codewars 문제풀기 (03/02)"
-excerpt: ""
+excerpt: "Highest And Lowest"
 
 categories:
  - Blog

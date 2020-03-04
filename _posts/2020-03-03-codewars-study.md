@@ -1,6 +1,6 @@
 ---
 title: "Codewars 문제풀기 (03/03)"
-excerpt: ""
+excerpt: "Square Every Digit"
 
 categories:
  - Blog
