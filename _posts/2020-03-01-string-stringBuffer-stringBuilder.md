@@ -1,6 +1,6 @@
 ---
 title: "String, StrnigBuffer, StringBuilder 차이"
-excerpt: ""
+excerpt: "String, StrnigBuffer, StringBuilder 차이"
 
 categories:
  - Blog

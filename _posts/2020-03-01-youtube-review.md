@@ -1,6 +1,6 @@
 ---
-title: "코딩의 실 아샬 - 코드는 언제 부패할까?"
-excerpt: ""
+title: "유튜브 리뷰 - 코딩의 신 아샬(03/01)"
+excerpt: "코드는 언제 부패하나?"
 
 categories:
  - Blog

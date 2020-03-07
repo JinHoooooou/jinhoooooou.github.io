@@ -7,8 +7,7 @@ categories:
 tags:
  - Java
  - Codewars
-last_modified_at: 2020-03-02
-
+last_modified_at: 2020-03-03
 ---
 
 
