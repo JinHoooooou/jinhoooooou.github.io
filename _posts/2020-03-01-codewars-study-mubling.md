@@ -166,7 +166,7 @@ public class Accumul {
 
   
 
-#### 5. 궁금한거 검색
+#### 4. 궁금한거 검색
 
 * String과 StringBuilder, StringBuffer의 차이
 

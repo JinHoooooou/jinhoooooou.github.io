@@ -121,7 +121,7 @@ public class Kata {
 * Integer.MIN_VALUE, MAX_VALUE가 있구나 이걸로 표현하는게 더 낫겠다.
 
 
-#### 5. 궁금한거 공부
+#### 4. 궁금한거 공부
 
 * 스트림과 람다
 
