@@ -46,7 +46,7 @@ KwInfoBot 프로젝트에서 내가 봇을 호출하고, 내가 보낸 메세지
 * 메소드 추출
   * echoMyMessage
 
-  ![image-20200225122512433]({{site.url}}/assets/2020-02-23-Refactoring.assets/image-20200225122512433.png)
+  ![image-20200225122512433]({{site.url}}/assets/images/2020-02-23-Refactoring.assets/image-20200225122512433.png)
 
   크게 세 부분으로 나눌 수 있다.
 
@@ -64,7 +64,7 @@ KwInfoBot 프로젝트에서 내가 봇을 호출하고, 내가 보낸 메세지
 
   가공한 메세지를 다시 채널에 출력하도록 메소드를 추출했다.
 
-  ![image-20200225123014760]({{site.url}}/assets/2020-02-23-Refactoring.assets/image-20200225123014760.png)
+  ![image-20200225123014760]({{site.url}}/assets/images/2020-02-23-Refactoring.assets/image-20200225123014760.png)
 
   ```java
   private boolean containCorrectBotName(String messageFromUser, String slackBotName) {
@@ -105,9 +105,9 @@ KwInfoBot 프로젝트에서 내가 봇을 호출하고, 내가 보낸 메세지
 
   에 맞춰 리팩토링 했다.
 
-  ![image-20200225143956755]({{site.url}}/assets/2020-02-23-Refactoring.assets/image-20200225143956755.png)
+  ![image-20200225143956755]({{site.url}}/assets/images/2020-02-23-Refactoring.assets/image-20200225143956755.png)
 
-  ![image-20200225144017023]({{site.url}}/assets/2020-02-23-Refactoring.assets/image-20200225144017023.png)
+  ![image-20200225144017023]({{site.url}}/assets/images/2020-02-23-Refactoring.assets/image-20200225144017023.png)
 
 * 클래스 추출
 
