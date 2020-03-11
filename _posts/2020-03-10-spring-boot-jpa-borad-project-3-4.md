@@ -47,13 +47,15 @@ last_modified_at: 2020-03-10
     > String으로 찾아보니 userRepository에 메소드를 추가해주어야한다 그래서
     >
     > `List<User> findByUserId(String userId)`를 추가해주니 알아서 된다!
+  >
+    > 추가! 그런데 지금 내가 연습하고 있는 테스트는 userId도 바꿀 수 있다. 그래서 primary key값인 id로 적용하는것이 낫겠다. 이런식으로 interface에 추가 구현을 할 수 있다는걸 이해했으니 됐다!
 
   * 조회된 사용자 정보를 모델에 담아서 뷰로 보내준다. 
 
   * 뷰(updateForm.html)의 form에 이전 정보들을 채워넣어야하는데 그때 사용하는 속성이 value이다. 그리고 User클래스에서 꺼내야하는것이므로 mustache문법으로 {{#user}}를 사용해야한다.
 
   * 그런데 css적용이 안되어있는데 상대경로로 입력해서 그렇다. 절대경로로 바꾸어주면 다시 적용된다.
-
+  
   * 이 css부분도 중복이되기때문에 중복을 제거하기위해 header.html을 추가하여 중복을 제거해준다.
 
 > 여기까지 실습
@@ -67,8 +69,11 @@ last_modified_at: 2020-03-10
 * userRepository를 이용해서 가입되어있는 회원정보를 가져와서 User 객체에 할당한 뒤 수정한다(이과정에서 update 메소드를 User클래스에 만들어준다.)
 
   * save메소드는 id가 기존에 있기때문에 추가하지않고 update한다
-
   * 그런데 update메소드를 User클래스에서 만들어서 사용하지않고, 내가 UserRepository 인터페이스에서 findByUserId메소드를 만든것처럼 Update도 만들 수 있지 않을까? 알아보기 위해서 JpaRepository에 대한 공부가 필요할것 같다. 찾아보자!
+
+  > 있는거 같긴 한데, 아무리 해봐도 안된다.. 일단은 강의에서 하는대로 하고 내가 더 찾아보거나해야할듯.. ㅜㅜ
+
+  * 생각해보면 primary key인 id를 기준으로 바꾸는데, userUpdateForm.html에서 id가 바뀌지 않고 그 값을 그대로 가져온다. 그러므로 UserRepoistory에서 굳이 가져오지않고, 그냥 update한 정보를 save하면 id는 그대로니까 새로 추가되는것이아닌 정보수정이 된다.
 
 * 수정 기능은 두단계로 나뉜다.
 
@@ -79,3 +84,25 @@ last_modified_at: 2020-03-10
 * form태그에서 method 속성중 GET이랑 POST만 썼는데 사실은 PUT DELETE등 http 메소드가 있다. 일반적으로는 GET과 POST만 쓰는데, 수정기능은 PUT에 해당하기 때문에, PUT을 사용하도록 꼼수를 쓴다.
 
 * form태그 안에 input태그를  type=hidden속성과 name=_method속성 그리고 value=put속성을 이용해서 PUT으로 감지한다. 그래서 Controller에서도 @PutMapping을 사용하여 "수정"기능을 구분 지을 수 있다.
+
+* 그런데 안된다. 검색해보니 SpringBoot2버전부터는 Application에 bean을 추가해주어야한다고한다.
+
+  ```java
+  @SpringBootApplication
+  public class MySlippApplication {
+  
+    public static void main(String[] args) {
+      SpringApplication.run(MySlippApplication.class, args);
+    }
+  
+    @Bean
+    public HiddenHttpMethodFilter hiddenHttpMethodFilter() {
+      return new HiddenHttpMethodFilter();
+    }
+  }
+  
+  ```
+
+  bean을 추가하고 해보니까 잘 된다.
+
+> 여기까지 실습
