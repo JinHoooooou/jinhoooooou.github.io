@@ -1,13 +1,13 @@
 ---
-title: "Codewars 문제풀기 (03/16)"
-excerpt: "Sum of numbers"
+title: "Codewars 문제풀기 (03/17)"
+excerpt: "Persistent Bugger"
 
 categories:
  - Blog
 tags:
  - Java
  - Codewars
-last_modified_at: 2020-03-16
+last_modified_at: 2020-03-17
 ---
 
 
@@ -49,8 +49,8 @@ last_modified_at: 2020-03-16
       return n < 10 ? 0 : 1;
     }
   }
-  ```
-  
+```
+
 * 입력 인자가 2 digits 이상일 경우
 
   * 테스트 코드
@@ -87,8 +87,8 @@ last_modified_at: 2020-03-16
       return count;
     }
   }
-  ```
-  
+```
+
 * 입력 인자 중 첫번째 인자(a)가 두번째 인자(b)보다 큰 경우
 
   * 테스트 코드
@@ -134,6 +134,7 @@ last_modified_at: 2020-03-16
       return count;
     }
   }
+  ```
 ```
   
   Success (약 15분)
@@ -160,8 +161,8 @@ last_modified_at: 2020-03-16
       return count;
     }
   }
-  ```
-  
+```
+
   제출
 
 ####  3. 답 비교, 느낀점
