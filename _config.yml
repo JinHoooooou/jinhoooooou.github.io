@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko-KR"
 title                    : "Easy Life"
 title_separator          : "-"
-subtitle                 :
+subtitle                 : "Jino Dev Blog"
 name                     : "JinHoooooou"
 description              : "개발자가 되고싶은 학생이 아무거나 일단 적는 블로그"
 url                      : "https://JinHoooooou.github.io"
@@ -71,9 +71,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # 구글 어날리틱스 등록  false (default), "google", "google-universal", "custom"
+  provider               : google # 구글 어날리틱스 등록  false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-161394817-1
     anonymize_ip         : # true, false (default)
 
 
