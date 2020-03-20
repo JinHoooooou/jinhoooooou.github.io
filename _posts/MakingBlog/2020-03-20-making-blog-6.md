@@ -1,6 +1,6 @@
 ---
-title: "Github page 블로그 만들기(5)"
-excerpt: "블로그 기본 설정하기"
+title: "Github page 블로그 만들기(6)"
+excerpt: "구글 검색 엔진 Google Search Console등록"
 classes: wide
 categories:
  - blog
@@ -15,116 +15,56 @@ last_modified_at: 2020-03-20
 
 모든 과정은 SW developer님의 [GitHub Pages 블로그 따라하기](https://devinlife.com/howto/)를 참고하여 만들었다.
 
-이번 포스팅에서는 최상위 폴더에 존재하는 `_config.yml`파일을 수정하여 블로그 구성을 변경하는 작업에 대해 살펴보자.
+이번 포스팅에서는 구글 검색 엔진인 Google Search Console을 등록하여 내 블로그를 구글에 노출시켜보자.
 
-`_config.yml`파일에는 지킬 동작에 대한 설정 내용을 모두 담고 있다. 이 파일을 수정하여 블로그 구성을 설정하거나 변경할 수 있다.
+## 1. Google Serach Console
 
-간단한 포스팅의 경우는 바로 commit 후 push해서 블로그에 포스팅을 해도 되지만, 블로그 구성이나 설정 변경은 매번 push하고 확인하는 작업들이 번거롭고 불편하기 때문에, shell에서`bundle exec jekyll serve`로 확인 한 후 commit하도록하자.
-
-참고로 `_config.yml`은 `_post`폴더의 md파일과 다르게 자동반영이 안된다. 사이트를 빌드할때 처음 `_config.yml`파일을 한번만 읽어들이기 때문에 수정한다고 자동으로 업데이트가 되지않는다. 따라서 `_config.yml`파일을 수정한 후 `bundle exec jekyll serve`로 다시 서버 실행하여 확인해야한다.
-
-## 1. 기본 구성
-
-![site-setting]({{site.url}}/assets/images/2020-03-20-making-blog-5.assets/site-setting-yml.png)
-
-* minimal_mistakes_skin : 블로그 스킨을 바꿀 수 있다. 스킨 상세내용은 [link](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)참조
-* locale : 지역 설정, 나는 ko-KR로 고쳤다.
-* title : 사이트 상단의 제목으로 표시된다.
-* name : 이름 설정
-* description : 블로그 설명
-  * **여기에 작성하는 name과 description 설정은 블로그에 표시되지 않는다. **
-
-* url : 페이지 url
-
-  * 여기에 설정된 url정보는 markdown 본문에서 YFM을 이용할 때 사용된다. 
-
-  ```yaml
-  site.url + {{}} --> {{site.url}}
-  ```
-
-  `_config.yml`파일에 설정된 url정보를 기반으로 링크 주소를 구성해준다.
-
-* teaser :  `_post`에 올린 글의 티저 사진을 등록한다. `_config.yml`에 설정된 이미지를 default로 사용하고 post마다 상단에
-
-  ```yaml
-  title : title
-  header :
-  	teaser : /assets/images/~~~
-  ```
-
-  로 override할 수 있다.
-
-  ![teaser-image]({{site.url}}/assets/images/2020-03-20-making-blog-5.assets/teaser-image.png)
-
-* logo : 상단 메뉴바에 로고를 넣을 수 있다.
-  * **기본적으로 이미지들은 `assets/images`폴더에 저장한다.**
+Google Search Console은 구글 검색 엔진에 웹사이트가 검색되도록 등록해주고, 구글 검색 결과가 어떻게 이뤄지고 있는지 모니터링 결과도 알려준다. Google에서 웹사이트를 크롤링하여 색인 생성을 요청할 수 있고, 검색 트래픽 데이터를 확인할 수 있다. Console에 가입하지 않아도 시간이 지나면  검색결과에 포함되긴 하지만, 가입해서 색인 생성을 요청하고 웹사이트 관리를 하면 더 능동적으로 구글 검색 엔진이 웹사이트를 파악하고 개선할 수 있도록 돕는다.
 
 
 
-## 2. 오픈 그래프 이미지, 텍스트 등록
+## 2. Google Search Console 등록하기
 
-오픈그래프 프로토콜이란 SNS등에서 링크에 대한 미리보기 제목, 이미지, 설명을 구성할때 메타 데이터 표기방법이다.
+1. [Google Search Console](https://search.google.com/search-console/about)사이트 접속, 구글 로그인(계정이 없다면 계정생성), 시작하기 
 
-![open-graph-image]({{site.url}}/assets/images/2020-03-20-making-blog-5.assets/open-graph-image.png)
+   ![google-console-start]({{site.url}}/assets/images/2020-03-20-making-blog-6.assets/google-console-start.png)
 
-* 링크로 공유할때 나오는 이미지, title, 설명등을 `_config.yml`에 등록할 수 있다.
+2. Property type 선택
 
-```yaml
-og_image : "/assets/images/profile.jpg"
-```
+   ![select-type]({{site.url}}/assets/images/2020-03-20-making-blog-6.assets/select-type.png)
 
-블로그 home page에서는 등록된 og_image가 이미지로 나오고 post마다 override할 수 있다.
+   * Domain과 URL을 선택할 수 있는데, 도메인 등록 방식은 서브 도메인을 포함하는 모든 URL을 통합으로 관리하는 방식이다. 나는 Github를 통해 호스팅하였으므로 지원이 안된다.(커스텀 도메인을 등록했다면 가능하다.)
+   * URL 접두어를 선택 후 URL을 입력 후 계속
 
-> description을 고치는 방법은 모르겠다. 이것저것 수정해봤는데 계속 바뀌질 않는다. ㅜㅜ
+3. 소유권 확인
 
+   ![verify-ownership]({{site.url}}/assets/images/2020-03-20-making-blog-6.assets/verify-ownership.png)
 
+   * 구글에 해당 url의 소유권자임을 증명해야한다. 구글이 권장하는 방법은 HTML file을 등록하는 것이다. 다운로드 후 내 github repository에 push한다.
 
-## 3. 블로그 주인 소개
+   * repo에 업로드 하였다면 확인 버튼을 누른다. 바로 확인이 안된다면 몇분 기다리면 자동적으로 확인이 되어있을 것이다.
 
-![site-author-yml]({{site.url}}/assets/images/2020-03-20-making-blog-5.assets/site-author-yml.png)
+     ![verification]({{site.url}}/assets/images/2020-03-20-making-blog-6.assets/verification.png)
 
-* name, avatar, bio 등을 적어 블로그에서 자신을 소개할 수 있다.
+4. 인덱싱 요청
 
-![site-author-image]({{site.url}}/assets/images/2020-03-20-making-blog-5.assets/site-author-image.png)
+   ![console-main]({{site.url}}/assets/images/2020-03-20-making-blog-6.assets/console-main.png)
 
-## 4. 블로그 주인 소개 - Footer
+   * 속성으로 이동을 누르면 다음과 같은 화면이 나온다. 구글 검색을 통해 웹사이트에 유입되는 현황을 확인 할 수 있다. 그러나 내 블로그는 아직 검색되지 않았기 때문에 아무정보가 없다.
 
-![site-author-footer-yml]({{site.url}}/assets/images/2020-03-20-making-blog-5.assets/site-author-footer-yml.png)
+   * 구글 검색 엔진이 내 블로그를 크롤링해야 하여 어떤 정보가 있는지 분석한다. 이 과정을 인덱싱이라고 한다. 인덱싱이 완료되면 다른 사용자들이 검색창에서 내 블로그의 관련 키워드(블로그 만들기, codewars 등..)를 검색하면 결과로 내 블로그를 보여주게 된다.
 
-블로그 하단의 메뉴들을 수정할 수 있다.
+   * 구글 검색 엔진에 블로그 인덱싱 요청을 보내보자.
 
-![site-author-footer-image]({{site.url}}/assets/images/2020-03-20-making-blog-5.assets/site-author-footer-image.png)
+     ![url-inspection]({{site.url}}/assets/images/2020-03-20-making-blog-6.assets/url-inspection.png)
 
+     * 상단의 url에 있는 모든 url 검사 창에 내 블로그 기본 url을 입력하면 다음과 같은 창이 나온다.  검사 결과가 없기 때문에 색인 생성 요청을 누른다.
 
+     * 이 방법은 일회성 요청이므로 지속적으로 google search engine이 크롤링 작업할 수 있도록 sitemap을 등록하자
 
-## 5. 블로그 표시 방법(Outputting) 설정
+       ![add-sitemap]({{site.url}}/assets/images/2020-03-20-making-blog-6.assets/add-sitemap.png)
 
-![outputting-yml]({{site.url}}/assets/images/2020-03-20-making-blog-5.assets/outputting-yml.png)
+       * `sitemap.xml`으로 작성하여 제출하면 바로 등록이 된다. 그럼 search engine이 이 파일을 기반으로 웹사이트의 업데이트된 정보를 지속적으로 크롤링 한다.
 
-* paginate는 블로그 홈 페이지에서 보여주는 최근 게시물의 개수이다.
-* timezone은 Asia/Seoul을 사용한다.
-
-
-
-## 6. _posts, _pages 기본 설정
-
-![page-post-default-image]({{site.url}}/assets/images/2020-03-20-making-blog-5.assets/page-post-default-image.png)
-
-* 지킬에서 게시물은 크게 post와 page로 구분된다.
-
-* 블로그 포스트들은 `_posts` 디렉토리에 위치한다. `_posts`에 속한 post들은 파일명이 yyyy-mm-dd 형식인 md파일이고 이를 지킬이 html로 변환한다.
-
-* 블로그 글 중에서는 꼭 날짜를 기반으로 한 글만 존재하지 않는다. 블로그 주인 소개 글이나, 사이트맵 등 날짜와 관련없는 페이지들이 있을 수 있다. 이련 post들은 `_pages`디렉토리에 작성한다.
-
-* `_config.yml`에 작성된 default 설정들은, md파일의 최상단에 작성하는 YFM을 작성하지 않아도 default로 가지는 설정들이다. 물론 YFM에 override할 수 있다. 이 방법으로 위에서 설명한 기본 teaser와 post별 teaser를 구분 하여 등록할 수 있다.
-
-* layout이 single일 때 md파일 post에서 `classes: wide`설정을 넣어주면 더 큰 화면으로 출력된다.
-
-  
-
----
-
-
-
-### [전체적인 minimal mistakes의 설정 참고](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
+5. 갓 등록하면 데이터 처리기간이 있으므로 확인할 요소가 많이 없다. 기다리자.
 
