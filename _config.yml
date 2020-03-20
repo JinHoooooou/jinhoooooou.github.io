@@ -24,7 +24,7 @@ description              : "개발자가 되고싶은 학생이 아무거나 일
 url                      : "https://JinHoooooou.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/profile.jpg"
+teaser                   :
 logo                     : "/assets/images/logo_temp.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
