@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko-KR"
 title                    : "Easy Life"
 title_separator          : "-"
-subtitle                 : "개발자가 되고싶은 학생이 아무거나 일단 적는 블로그"
+subtitle                 :
 name                     : "JinHoooooou"
 description              : "개발자가 되고싶은 학생이 아무거나 일단 적는 블로그"
 url                      : "https://JinHoooooou.github.io"
@@ -79,9 +79,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "LeeJinHo"
+  name             : "JinHoooooou"
   avatar           : "/assets/images/profile.jpg"
-  bio              : "TIL(Today I Learned) Test용 블로그"
+  bio              : "개발자가 되고싶은 학생이 아무글이나 일단 적는 블로그"
   location         : "South Korea"
   email            : "jinho4744@naver.com"
   links:
@@ -93,7 +93,7 @@ author:
       url: "https://github.com/JinHoooooou"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/jin__hooooou/"
+      url: "https://www.instagram.com/jinhoooooou/"
 
 # Site Footer
 footer:
@@ -103,7 +103,7 @@ footer:
       url: "https://github.com/JinHoooooou"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/jin__hooooou/"
+      url: "https://www.instagram.com/jinhoooooou/"
 
 
 # Reading Files
@@ -171,7 +171,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # 첫 페이지에 보여줄 최근 게시물 갯수
+paginate: 10 # 첫 페이지에 보여줄 최근 게시물 갯수
 paginate_path: /page:num/
 timezone: Asia/Seoul # testhttps://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
