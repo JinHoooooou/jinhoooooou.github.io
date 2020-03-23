@@ -39,8 +39,9 @@ last_modified_at: 2020-03-11
 
 * branch를 새로 만들어서 진행했기 때문에 git remote update로 원격 저장소를 update한다.
 * 그리고 원격 branch 'third-cycle-studying'을 aws 인스턴스로 가져오기 위해 `git checkout -t remotes/origin/third-cycle-studying`으로 가져온다.
-* 자동으로 third-cycle-studying 브랜치로 이동했기 때문에 바로 `./mvn clean package`로 빌드한다.
+* 자동으로 third-cycle-studying 브랜치로 이동했기 때문에 바로 `./mvnw clean package`로 빌드한다.
 * 빌드가 완료되면 target 디렉토리로 이동 후 `java -jar my-slipp.jar &`로 백그라운드로 서버를 실행한다.
 * 강의를 보면 접속하면 /include/header를 로드할수없다고 에러가나오는데, 나는 된다. 근데 회원가입이나 userlist출력 버튼을 누르면 에러가 발생한다.
+  
   * 유튜브 댓글들을 보니까 Controller부분에서 url처음부분의 /를 빼주면 된다고한다. 왜 그런지는 모르겠다.. 댓글들도..
 
