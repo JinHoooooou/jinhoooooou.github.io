@@ -1,13 +1,13 @@
 ---
-title: "Codewars 문제풀기 (03/22)"
+title: "Codewars 문제풀기 (03/23)"
 excerpt: "Duplicate Encoder"
-classes:wide
+classes: wide
 categories:
  - Blog
 tags:
  - Java
  - Codewars
-last_modified_at: 2020-03-22
+last_modified_at: 2020-03-23
 ---
 
 

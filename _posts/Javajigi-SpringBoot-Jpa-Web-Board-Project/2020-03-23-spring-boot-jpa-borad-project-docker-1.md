@@ -32,7 +32,7 @@ last_modified_at: 2020-03-23
 * Docker 설치
   * [Docker 설치](https://docs.docker.com/docker-for-windows/install/)에서 설치
   * 설치가 완료되면 재시작
-  * ![icon-tray]({site.url}}/assets/images/2020-03-23-spring-boot-jpa-borad-project-docker-1.assets/icon-tray.png)
+  * ![icon-tray]({{site.url}}/assets/images/2020-03-23-spring-boot-jpa-borad-project-docker-1.assets/icon-tray.png)
     * 아이콘과 트레이 화면
 
 * 세팅
@@ -41,9 +41,9 @@ last_modified_at: 2020-03-23
 
   * 트레이에서 `Switch to Linux containers`눌러서 변환
 
-    ![switch-ubuntu]({site.url}}/assets/images/2020-03-23-spring-boot-jpa-borad-project-docker-1.assets/switch-ubuntu.png)
+    ![switch-ubuntu]({{site.url}}/assets/images/2020-03-23-spring-boot-jpa-borad-project-docker-1.assets/switch-ubuntu.png)
 
-    ![before-after]({site.url}}/assets/images/2020-03-23-spring-boot-jpa-borad-project-docker-1.assets/before-after.png)
+    ![before-after]({{site.url}}/assets/images/2020-03-23-spring-boot-jpa-borad-project-docker-1.assets/before-after.png)
 
 * `docker pull ubuntu`로 ubuntu 설치
 
@@ -59,7 +59,7 @@ last_modified_at: 2020-03-23
   PS C:\Users\User>
   ```
 
-  ![docker-desktop]({site.url}}/assets/images/2020-03-23-spring-boot-jpa-borad-project-docker-1.assets/docker-desktop.png)
+  ![docker-desktop]({{site.url}}/assets/images/2020-03-23-spring-boot-jpa-borad-project-docker-1.assets/docker-desktop.png)
 
 * `docker stop dockerForJwp`나 `docker start dockerForJwp`로 실행, 중지 가능
 * `docker exec -it dockerForJwp /bin/bash`로 ubuntu접속 가능
