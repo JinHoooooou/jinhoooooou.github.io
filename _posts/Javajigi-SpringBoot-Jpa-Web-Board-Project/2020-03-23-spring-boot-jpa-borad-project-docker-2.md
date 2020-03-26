@@ -41,7 +41,7 @@ last_modified_at: 2020-03-23
   CMD /bin/bash
   ```
 
-* `docker build --tag ko_ubuntu:latest`로 ubuntu 빌드
+* `docker build --tag ko_ubuntu:latest ./`로 ubuntu 빌드
 
   * docker images로 빌드 확인
 
