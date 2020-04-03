@@ -104,6 +104,7 @@ last_modified_at: 2020-03-31
   * Spring MVC가 컨트롤러에 해당하는 메서드를 바로 알아서 json으로 변환을 해주는것은 아니다. 그렇게 하도록 하려면 @Controller대신에 @RestController를 사용해야하한다.
 
 * 테스트
+  
   * 테스트 할 때 console을 확인해보면 데이터와 url이 제대로 전달된것을 확인할 수 있다. 여기서 새로고침(F5)를 누르면 실제로 댓글등록도 되어있다.
 
 > 여기까지 테스트
@@ -119,5 +120,47 @@ last_modified_at: 2020-03-31
   ```
 
   * data는 answer, status는 200 등 http 상태코드
+
   * 콘솔로 확인해 보니, 다른 데이터는 안보이는데 formattedCreateDate field만 가지고있다. 다른 field는 getter메서드가 없어서 그런것이다. getter메서드를 사용하면된다.
+
   * 그건 다음시간에 다음 post에 다룬다..
+
+  * :raising_hand_man:여기 테스트하는데 나는 계속 Error가 나온다 왜그런지 모르겠다.
+
+  * :raising_hand_man: Success대신 Error에 data를 인수로하여 `console.log(data)`를 작성하여 크롬 console에서 확인해보았다. Error에대한 메세지가 떴는데 자세히 보니 json형태로 변환은 되었는데 parseerror이 발생하여 error이 발생한것이었다.
+
+    ![error]({{site.url}}/assets/images/2020-03-31-spring-boot-jpa-borad-project-6-1.assets/error.png)
+
+    * responseText가 json형태이고, status도 200인데 parsererror가 발생했다.
+    * responseText를 더 보니 무한루프가 발생하고 있었다.
+
+  * :raising_hand_man: 구글에 `ajax parsererror json`이라고 검색해보니 양방향 매핑을 맺은 필드에 대한 어노테이션을 추가해주어야 한다고 한다. Question 클래스와 Answer 클래스를 보면 서로 one-to-many, many-to-one 어노테이션을 붙여 매핑해주었다. Question 클래스의 Answer 객체에 `@JsonManagedReference`를 붙여주고,  Answer 클래스의 Question 객체에 `@JsonBackReference`를 붙여준다.
+
+    ```java
+    public class Question {
+      ...
+      @JsonManagedReference
+      @OneToMany(mappedBy = "question")
+      @OrderBy("id ASC")
+      private List<Answer> answers;
+      ...
+    }
+    
+    //서로 다른 java파일
+    
+    public class Answer {
+      ...
+      @JsonBackReference
+      @ManyToOne
+      @JoinColumn(foreignKey = @ForeignKey(name = "fk_answer_to_question"))
+      @JsonProperty
+      private Question question;
+    }
+    ```
+    * `@JsonManagedRefernce`는 참조가 되는 앞부분을 의미하며, 정상적으로 직렬화를 수행한다.
+    * `@JsonBackReference`는 참조가 되는 뒷부분을 의미하며, 직렬화를 수행하지 않는다.
+    * [https://www.baeldung.com/jackson-bidirectional-relationships-and-infinite-recursion](https://www.baeldung.com/jackson-bidirectional-relationships-and-infinite-recursion)
+
+  * 🙋‍♂️다시 콘솔로 확인해보니 제대로 출력되었다.
+
+    ![success]({{site.url}}/assets/images/2020-03-31-spring-boot-jpa-borad-project-6-1.assets/success.png)
