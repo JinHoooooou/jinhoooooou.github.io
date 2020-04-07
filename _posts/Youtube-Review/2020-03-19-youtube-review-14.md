@@ -1,13 +1,12 @@
 ---
 title: "유튜브 리뷰 - 코딩의 실 아샬(03/19) "
 excerpt: "코딩을 하기 전에 할 일"
-
+classes: wide
 categories:
- - Blog
+ - youtube review
 tags:
- - Git
- - Youtube
- - Review
+ - Clean code
+ - 아샬
 last_modified_at: 2020-03-19
 ---
 

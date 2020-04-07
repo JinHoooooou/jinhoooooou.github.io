@@ -1,13 +1,12 @@
 ---
 title: "유튜브 리뷰 - 코딩의 신 아샬(03/01)"
 excerpt: "코드는 언제 부패하나?"
-
+classes: wide
 categories:
- - Blog
+ - youtube review
 tags:
  - Clean code
- - Youtube
- - Review
+ - 아샬
 last_modified_at: 2020-03-01
 ---
 

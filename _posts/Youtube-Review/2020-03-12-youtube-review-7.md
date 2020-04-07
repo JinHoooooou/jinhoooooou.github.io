@@ -1,13 +1,12 @@
 ---
 title: "유튜브 리뷰 - 코딩의 실 아샬(03/12) "
 excerpt: "코드를 컴퓨터가 아니라 머리로 실행하면 어떻게 될까?"
-
+classes: wide
 categories:
- - Blog
+ - youtube review
 tags:
- - Git
- - Youtube
- - Review
+ - Clean code
+ - 아샬
 last_modified_at: 2020-03-12
 ---
 

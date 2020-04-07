@@ -1,13 +1,11 @@
 ---
 title: "유튜브 리뷰 - 우아한 테크 테코톡(03/16) "
 excerpt: "Spring vs Spring Boot"
-
+classes: wide
 categories:
- - Blog
+ - youtube review
 tags:
- - Git
- - Youtube
- - Review
+ - 테코톡
 last_modified_at: 2020-03-16
 ---
 

@@ -3,11 +3,10 @@ title: "유튜브 리뷰 - 코딩의 실 아샬(03/26) "
 excerpt: "책 읽고 공부한 걸 블로그에 요약 정리하고 있는데 더 좋은 방법이 있을까요?"
 classes: wide
 categories:
- - Blog
+ - youtube review
 tags:
- - Git
- - Youtube
- - Review
+ - Clean code
+ - 아샬
 last_modified_at: 2020-03-25
 ---
 

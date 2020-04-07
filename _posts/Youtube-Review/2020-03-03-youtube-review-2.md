@@ -1,13 +1,12 @@
 ---
 title: "유튜브 리뷰 - 코딩의 실 아샬(03/03) "
 excerpt: "짧고 이해하기 쉬운 코드를 작성하는 방법"
-
+classes: wide
 categories:
- - Blog
+ - youtube review
 tags:
  - Clean code
- - Youtube
- - Review
+ - 아샬
 last_modified_at: 2020-03-03
 ---
 

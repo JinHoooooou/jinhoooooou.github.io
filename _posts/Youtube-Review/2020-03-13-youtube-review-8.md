@@ -1,13 +1,12 @@
 ---
 title: "유튜브 리뷰 - 코딩의 실 아샬(03/13) "
 excerpt: "코딩 테스트에 대한 생각"
-
+classes: wide
 categories:
- - Blog
+ - youtube review
 tags:
- - Git
- - Youtube
- - Review
+ - Clean code
+ - 아샬
 last_modified_at: 2020-03-13
 ---
 

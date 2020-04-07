@@ -1,13 +1,12 @@
 ---
 title: "유튜브 리뷰 - 코딩의 실 아샬(03/15) "
 excerpt: "프로그래밍을 공부할 때 뭘 만들어야 하나?"
-
+classes: wide
 categories:
- - Blog
+ - youtube review
 tags:
- - Git
- - Youtube
- - Review
+ - Clean code
+ - 아샬
 last_modified_at: 2020-03-15
 ---
 

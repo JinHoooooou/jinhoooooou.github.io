@@ -3,11 +3,10 @@ title: "유튜브 리뷰 - 코딩의 실 아샬(03/29) "
 excerpt: "입문자를 위한 책을 추천해 주세요"
 classes: wide
 categories:
- - Blog
+ - youtube review
 tags:
- - Git
- - Youtube
- - Review
+ - Clean code
+ - 아샬
 last_modified_at: 2020-03-29
 ---
 

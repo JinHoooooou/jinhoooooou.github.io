@@ -3,11 +3,10 @@ title: "유튜브 리뷰 - 코딩의 실 아샬(03/25) "
 excerpt: "초보 개발자가 해야 할 사회적 활동"
 classes: wide
 categories:
- - Blog
+ - youtube review
 tags:
- - Git
- - Youtube
- - Review
+ - Clean code
+ - 아샬
 last_modified_at: 2020-03-25
 ---
 
