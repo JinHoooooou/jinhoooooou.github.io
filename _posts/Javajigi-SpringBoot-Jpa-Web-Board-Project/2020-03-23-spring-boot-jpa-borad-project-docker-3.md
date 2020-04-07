@@ -3,12 +3,13 @@ title: "Spring-Boot,JPA로 질문/답변 게시판 구현(25)"
 excerpt: "Docker3. Dockerfile을 활용해서 나만의 Docker 이미지 만들기"
 classes: wide
 categories:
- - Blog
+ - 웹 게시판 프로젝트
 tags:
  - Java
  - Spring
- - Project
- - Git
+ - JPA
+ - Docker
+ - javajigi
 last_modified_at: 2020-03-23
 ---
 
