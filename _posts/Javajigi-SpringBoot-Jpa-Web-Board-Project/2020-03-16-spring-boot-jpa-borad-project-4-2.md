@@ -3,12 +3,12 @@ title: "Spring-Boot,JPA로 질문/답변 게시판 구현(19)"
 excerpt: "로그인 상태에 따른 메뉴 처리 및 로그아웃"
 
 categories:
- - Blog
+ - 웹 게시판 프로젝트
 tags:
  - Java
  - Spring
- - Project
- - Git
+ - JPA
+ - javajigi
 last_modified_at: 2020-03-15
 ---
 

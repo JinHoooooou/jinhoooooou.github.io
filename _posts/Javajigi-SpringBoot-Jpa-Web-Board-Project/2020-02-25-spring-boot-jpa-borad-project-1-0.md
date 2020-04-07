@@ -3,11 +3,12 @@ title: "Spring-Boot,JPA로 질문/답변 게시판 구현(0)"
 excerpt: "자바 웹 애플리케이션 과정 소개"
 
 categories:
- - Blog
+ - 웹 게시판 프로젝트
 tags:
  - Java
  - Spring
- - Project
+ - JPA
+ - javajigi
 last_modified_at: 2020-02-25
 ---
 

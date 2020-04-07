@@ -3,12 +3,12 @@ title: "Spring-Boot,JPA로 질문/답변 게시판 구현(13)"
 excerpt: "자바와 객체 테이블 매핑, 회원가입 기능 구현"
 
 categories:
- - Blog
+ - 웹 게시판 프로젝트
 tags:
  - Java
  - Spring
- - Project
- - Git
+ - JPA
+ - javajigi
 last_modified_at: 2020-03-05
 ---
 

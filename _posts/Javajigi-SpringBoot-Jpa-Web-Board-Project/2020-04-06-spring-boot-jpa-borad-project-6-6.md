@@ -3,12 +3,12 @@ title: "Spring-Boot,JPA로 질문/답변 게시판 구현(38)"
 excerpt: "Swagger 라이브러리를 통한 API 문서화 및 테스트"
 classes: wide
 categories:
- - Blog
+ - 웹 게시판 프로젝트
 tags:
  - Java
  - Spring
- - Project
- - Git
+ - JPA
+ - javajigi
 last_modified_at: 2020-04-06
 ---
 

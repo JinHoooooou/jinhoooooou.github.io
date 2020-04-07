@@ -3,12 +3,12 @@ title: "Spring-Boot,JPA로 질문/답변 게시판 구현(29)"
 excerpt: "질문 상세보기 기능"
 classes: wide
 categories:
- - Blog
+ - 웹 게시판 프로젝트
 tags:
  - Java
  - Spring
- - Project
- - Git
+ - JPA
+ - javajigi
 last_modified_at: 2020-03-27
 ---
 
@@ -70,6 +70,7 @@ last_modified_at: 2020-03-27
   ```
 
 * 테스트
+  
   * 입력한 contents가 그대로 출력된다. html태그를 일부러 적어놨는데 적용이 안되고 입력한 그대로 출력된다. 이것을 escaping이라고하는데 이런 처리를 해주어야 보안상 문제가 발생하지 않는다. 근데 줄바꿈(enter)가 적용되지 않기 때문에 나중에 Util클래스를 만들어 enter에 해당하는 부분을 html의 br역할을 하도록 작업을 할 필요가 있다. 
 
 > 여기까지 실습

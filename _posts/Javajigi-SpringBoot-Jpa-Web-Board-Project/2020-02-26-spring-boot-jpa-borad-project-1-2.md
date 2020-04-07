@@ -3,11 +3,12 @@ title: "Spring-Boot,JPA로 질문/답변 게시판 구현(2)"
 excerpt: "Bootstrap을 활용한 HTML 페이지 개발"
 
 categories:
- - Blog
+ - 웹 게시판 프로젝트
 tags:
  - Java
  - Spring
- - Project
+ - JPA
+ - javajigi
 last_modified_at: 2020-02-26
 ---
 

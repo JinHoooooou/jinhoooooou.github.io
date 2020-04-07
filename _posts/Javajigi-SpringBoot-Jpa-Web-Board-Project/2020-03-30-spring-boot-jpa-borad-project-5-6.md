@@ -3,12 +3,12 @@ title: "Spring-Boot,JPA로 질문/답변 게시판 구현(31)"
 excerpt: "QuestionController 중복 코드 제거 리팩토링"
 classes: wide
 categories:
- - Blog
+ - 웹 게시판 프로젝트
 tags:
  - Java
  - Spring
- - Project
- - Git
+ - JPA
+ - javajigi
 last_modified_at: 2020-03-30
 ---
 

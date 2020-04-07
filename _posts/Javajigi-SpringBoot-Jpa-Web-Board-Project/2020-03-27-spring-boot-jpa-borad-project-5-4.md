@@ -3,12 +3,12 @@ title: "Spring-Boot,JPA로 질문/답변 게시판 구현(30)"
 excerpt: "수정/삭제 기능에 대한 보안 처리 및 LocalDateTime 설정"
 classes: wide
 categories:
- - Blog
+ - 웹 게시판 프로젝트
 tags:
  - Java
  - Spring
- - Project
- - Git
+ - JPA
+ - javajigi
 last_modified_at: 2020-03-27
 ---
 

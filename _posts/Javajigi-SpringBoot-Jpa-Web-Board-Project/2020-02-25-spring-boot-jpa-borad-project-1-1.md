@@ -3,11 +3,12 @@ title: "Spring-Boot,JPA로 질문/답변 게시판 구현(1)"
 excerpt: "Spring Boot 로컬 개발 환경 세팅"
 
 categories:
- - Blog
+ - 웹 게시판 프로젝트
 tags:
  - Java
  - Spring
- - Project
+ - JPA
+ - javajigi
 last_modified_at: 2020-02-25
 ---
 
@@ -44,6 +45,7 @@ last_modified_at: 2020-02-25
    > 3. intelliJ 재시작 후 확인 OK
 
 8. live reload 크롬 확장프로그램 설치 (이건 그래도 아는거라 넘어가도됨)
+   
    * live reload를 사용하려면 DevTools dependency가 꼭 필요하다.
 
 
