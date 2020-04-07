@@ -3,9 +3,10 @@ title: "Clean Code 읽기(7)"
 excerpt: "7장 오류 처리"
 classes: wide
 categories:
- - blog
+ - Book
 tags:
- - blog
+ - clean code
+ - refactoring
 last_modified_at: 2020-03-25
 ---
 

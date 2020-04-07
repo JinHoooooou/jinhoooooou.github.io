@@ -3,9 +3,10 @@ title: "Clean Code 읽기(8)"
 excerpt: "10장 클래스"
 classes: wide
 categories:
- - blog
+ - Book
 tags:
- - blog
+ - clean code
+ - refactoring
 last_modified_at: 2020-03-25
 ---
 

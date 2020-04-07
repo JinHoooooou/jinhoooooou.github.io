@@ -1,11 +1,12 @@
 ---
 title: "Clean Code 읽기(4)"
 excerpt: "9장 단위 테스트"
-
+classes: wide
 categories:
- - blog
+ - Book
 tags:
- - blog
+ - clean code
+ - refactoring
 last_modified_at: 2020-03-01
 ---
 

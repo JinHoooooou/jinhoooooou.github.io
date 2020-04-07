@@ -1,11 +1,12 @@
 ---
 title: "Clean Code 읽기(5)"
 excerpt: "12장 창발성(創發性)"
-
+classes: wide
 categories:
- - blog
+ - Book
 tags:
- - blog
+ - clean code
+ - refactoring
 last_modified_at: 2020-03-05
 ---
 

@@ -1,11 +1,12 @@
 ---
 title: "Clean Code 읽기(1)"
 excerpt: "1장 깨끗한 코드"
-
+classes: wide
 categories:
- - blog
+ - Book
 tags:
- - blog
+ - clean code
+ - refactoring
 last_modified_at: 2020-02-18
 ---
 

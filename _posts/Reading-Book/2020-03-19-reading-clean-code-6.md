@@ -1,11 +1,12 @@
 ---
 title: "Clean Code 읽기(6)"
 excerpt: "3장 함수"
-
+classes: wide
 categories:
- - blog
+ - Book
 tags:
- - blog
+ - clean code
+ - refactoring
 last_modified_at: 2020-03-19
 ---
 

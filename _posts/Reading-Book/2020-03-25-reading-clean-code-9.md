@@ -3,9 +3,10 @@ title: "Clean Code 읽기(7)"
 excerpt: "15장 JUnit 들여다보기"
 classes: wide
 categories:
- - blog
+ - Book
 tags:
- - blog
+ - clean code
+ - refactoring
 last_modified_at: 2020-03-23
 ---
 
@@ -62,6 +63,8 @@ last_modified_at: 2020-03-23
     return expected == null || actual == null || areStringsEqual();
   }
   
+  ```
+
 //부정문 -> 긍정문
   public String compact(String message) {
     if (canBeCompacted()) {

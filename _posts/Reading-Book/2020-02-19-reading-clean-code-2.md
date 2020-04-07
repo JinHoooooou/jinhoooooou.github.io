@@ -1,11 +1,12 @@
 ---
 title: "Clean Code 읽기(2)"
 excerpt: "2장 의미 있는 이름"
-
+classes: wide
 categories:
- - blog
+ - Book
 tags:
- - blog
+ - clean code
+ - refactoring
 last_modified_at: 2020-02-19
 ---
 
