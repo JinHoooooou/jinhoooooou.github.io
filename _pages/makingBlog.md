@@ -1,6 +1,6 @@
 ---
 title : "Github 블로그 만들기"
-permalink : /MakingBlog
+permalink : /makingBlog
 layout : single
 author_profile : true
 ---
