@@ -3,10 +3,11 @@ title: "Codewars 문제풀기 (03/02)"
 excerpt: "Highest And Lowest"
 
 categories:
- - Blog
+ - codewars
 tags:
  - Java
- - Codewars
+ - codewars
+ - coding test
 last_modified_at: 2020-03-02
 
 ---

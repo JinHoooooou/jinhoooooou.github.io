@@ -3,10 +3,11 @@ title: "Codewars 문제풀기 (03/29)"
 excerpt: "매우 쉬웠던 문제들"
 classes: wide
 categories:
- - Blog
+ - codewars
 tags:
  - Java
- - Codewars
+ - codewars
+ - coding test
 last_modified_at: 2020-03-26
 
 ---

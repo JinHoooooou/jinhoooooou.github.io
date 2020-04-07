@@ -3,10 +3,11 @@ title: "Codewars 문제풀기 (03/11)"
 excerpt: "Jaden Casing Strings"
 
 categories:
- - Blog
+ - codewars
 tags:
  - Java
- - Codewars
+ - codewars
+ - coding test
 last_modified_at: 2020-03-10
 ---
 

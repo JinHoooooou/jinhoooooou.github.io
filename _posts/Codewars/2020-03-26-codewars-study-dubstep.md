@@ -3,10 +3,11 @@ title: "Codewars 문제풀기 (03/26)"
 excerpt: "Dubstep"
 classes: wide
 categories:
- - Blog
+ - codewars
 tags:
  - Java
- - Codewars
+ - codewars
+ - coding test
 last_modified_at: 2020-03-26
 ---
 
@@ -46,7 +47,7 @@ last_modified_at: 2020-03-26
         return song.replaceAll("WUB", "");
       }
     }
-    ```
+  ```
   
 * 입력 String이 "RWUBWUBWUBLWUB"일 떄
 
@@ -63,7 +64,7 @@ last_modified_at: 2020-03-26
         assertEquals("R L", actual);
       }
     ```
-    
+  
 * 실제 코드
   
   ```java
@@ -84,7 +85,7 @@ last_modified_at: 2020-03-26
         return result.toString();
       }
     }
-    ```
+  ```
   
     * 공백 처리를 어떻게 할 줄 몰라서 어쩔 수 없이  count를 선언해서 count가 0일 경우는 result문자열에 그냥 붙여주고, count가 0이 아닐경우 space + 문자열을 붙여주는것으로 해결했다.
   

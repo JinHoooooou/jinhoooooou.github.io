@@ -3,10 +3,11 @@ title: "Codewars 문제풀기 (03/08)"
 excerpt: "Sum of Digits / Digital Root"
 
 categories:
- - Blog
+ - codewars
 tags:
  - Java
- - Codewars
+ - codewars
+ - coding test
 last_modified_at: 2020-03-08
 ---
 

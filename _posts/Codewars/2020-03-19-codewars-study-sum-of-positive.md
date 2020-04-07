@@ -3,10 +3,11 @@ title: "Codewars 문제풀기 (03/19)"
 excerpt: "Sum of positive"
 
 categories:
- - Blog
+ - codewars
 tags:
  - Java
- - Codewars
+ - codewars
+ - coding test
 last_modified_at: 2020-03-19
 ---
 

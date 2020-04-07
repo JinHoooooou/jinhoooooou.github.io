@@ -3,10 +3,11 @@ title: "Codewars 문제풀기 (04/06)"
 excerpt: "Find the next perfect square!"
 classes: wide
 categories:
- - Blog
+ - codewars
 tags:
  - Java
- - Codewars
+ - codewars
+ - coding test
 last_modified_at: 2020-03-30
 ---
 
@@ -52,6 +53,7 @@ last_modified_at: 2020-03-30
     ```
     
   * 인수 sq가 자연수의 제곱인 것을 어떻게 표현할까 생각해봤는데, 예를들어 sq가 144라면 sqrt(144)는 12를 반환할 것이고, 이 값을 올림해도 12일것이다. 반면 sq가 122라면 sqrt(122)는 11.xxx를 반환할 것이고, 이 값을 올림하면 12일것이다. 따라서 `Math.sqrt(sq)!=Math.ceil(Math.sqrt(sq))` 라면 -1을 반환하도록 구현했다.
+    
     * `? -1 : 0;`구절에서 바로 다음 자연수의 제곱을 리턴할 수 있지만 TDD규칙상 테스트만 만족하면 되기때문에 굳이 구현하지 않았다.
     
   * 리팩토링
