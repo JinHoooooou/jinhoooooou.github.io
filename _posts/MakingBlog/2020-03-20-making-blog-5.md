@@ -1,6 +1,6 @@
 ---
-title: "Github page 블로그 만들기(5)"
-excerpt: "블로그 기본 설정하기"
+title: "Github page 블로그 만들기 - 블로그 기본 설정하기"
+excerpt: "블로그 root디렉토리의 _config.yml파일을 수정하여 profile등을 수정해보자."
 classes: wide
 categories:
  - blog
@@ -8,7 +8,7 @@ tags:
  - blog
  - github page
  - jekyll
-last_modified_at: 2020-03-20
+last_modified_at: 2020-04-07
 ---
 
 
@@ -32,8 +32,9 @@ last_modified_at: 2020-03-20
 * title : 사이트 상단의 제목으로 표시된다.
 * name : 이름 설정
 * description : 블로그 설명
-  * **여기에 작성하는 name과 description 설정은 블로그에 표시되지 않는다. **
-
+  
+* **여기에 작성하는 name과 description 설정은 블로그에 표시되지 않는다. **
+  
 * url : 페이지 url
 
   * 여기에 설정된 url정보는 markdown 본문에서 YFM을 이용할 때 사용된다. 
@@ -57,6 +58,7 @@ last_modified_at: 2020-03-20
   ![teaser-image]({{site.url}}/assets/images/2020-03-20-making-blog-5.assets/teaser-image.png)
 
 * logo : 상단 메뉴바에 로고를 넣을 수 있다.
+  
   * **기본적으로 이미지들은 `assets/images`폴더에 저장한다.**
 
 

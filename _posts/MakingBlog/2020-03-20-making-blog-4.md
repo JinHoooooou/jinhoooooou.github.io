@@ -1,8 +1,8 @@
 ---
-title: "Github page 블로그 만들기(4)"
+title: "Github page 블로그 만들기 - 블로그에 실제 포스팅 하기"
 header:
   teaser: /assets/images/2020-03-20-making-blog-4.assets/image-20200320121935474.png
-excerpt: "블로그에 글 쓰기"
+excerpt: "블로그에 포스팅 하는 방법에 대해 알아보자"
 
 categories:
  - blog
@@ -10,7 +10,7 @@ tags:
  - blog
  - github page
  - jekyll
-last_modified_at: 2020-03-20
+last_modified_at: 2020-04-07
 ---
 
 모든 과정은 SW developer님의 [GitHub Pages 블로그 따라하기](https://devinlife.com/howto/)를 참고하여 만들었다.
