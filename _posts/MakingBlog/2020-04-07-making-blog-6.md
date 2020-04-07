@@ -3,9 +3,9 @@ title: "Github page 블로그 만들기 - Page 작성하기"
 excerpt: "사이트 내 특정 주소에 보여줄 글인 Page를 작성해보자"
 classes: wide
 categories:
- - blog
+ - making blog
 tags:
- - blog
+ - making blog
  - github page
  - jekyll
 last_modified_at: 2020-04-07

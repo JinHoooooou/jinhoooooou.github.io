@@ -3,9 +3,9 @@ title: "Github page 블로그 만들기 - 블로그 기본 설정하기"
 excerpt: "블로그 root디렉토리의 _config.yml파일을 수정하여 profile등을 수정해보자."
 classes: wide
 categories:
- - blog
+ - making blog
 tags:
- - blog
+ - making blog
  - github page
  - jekyll
 last_modified_at: 2020-04-07

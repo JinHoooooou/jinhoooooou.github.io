@@ -3,9 +3,9 @@ title: "Github page 블로그 만들기 - 메뉴 구성하기"
 excerpt: "블로그 상단의 메뉴를 구성해보자"
 classes: wide
 categories:
- - blog
+ - making blog
 tags:
- - blog
+ - making blog
  - github page
  - jekyll
 last_modified_at: 2020-04-07
@@ -39,7 +39,43 @@ main:
 
 * navigation.yml 파일은 상단 메뉴바를 구성하는 설정이 있다. 메뉴 하이퍼링크 모음으로 title은 메뉴에 표시될 텍스트이고, url 항목은 메뉴가 연결될 링크 주소이다.
 
-  
+
+
+_pages 폴더에 makingBlog.md파일을 작성했다.
+
+```markdown
+---
+title: "Github 블로그 만들기"
+permalink: /makingBlog/
+layout: single
+author_profile: true
+
+---
+
+
+
+## Github Page 호스팅을 이용하여 블로그를 만들어보자
+
+1.  [Github page 블로그 만들기 - Prologue]({{site.url}}/blog/making-blog-1/)
+2.  [Github page 블로그 만들기 - Ruby와 Jekyll 설치, 기본 블로그 생성]({{site.url}}/blog/making-blog-2/)
+3.  [Github page 블로그 만들기 -  Jekyll 테마선택, Github 호스팅]({{site.url}}/blog/making-blog-3/)
+4.  [Github page 블로그 만들기 -  블로그에 실제 포스팅 하기]({{site.url}}/blog/making-blog-4/)
+5.  [Github page 블로그 만들기 -  블로그 기본 설정하기]({{site.url}}/blog/making-blog-5/)
+6.  [Github page 블로그 만들기 -  Page 작성하기]({{site.url}}/blog/making-blog-6/)
+7.  [Github page 블로그 만들기 -  메뉴 구성하기]({{site.url}}/blog/making-blog-7/)
+8.  [Github page 블로그 만들기 -  Google Search Console 등록]({{site.url}}/blog/making-blog-8/)
+9.  [Github page 블로그 만들기 -  Google Analytics 등록]({{site.url}}/blog/making-blog-9/)
+
+
+```
+
+
+
+![menu]({{site.url}}/assets/images/2020-04-07-making-blog-7.assets/menu.png)
+
+* 메뉴 등록이 완성되었다
+
+
 
 ## 2. 카테고리와 tags 등록하기
 

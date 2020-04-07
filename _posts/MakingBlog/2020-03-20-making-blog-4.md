@@ -5,9 +5,9 @@ header:
 excerpt: "블로그에 포스팅 하는 방법에 대해 알아보자"
 
 categories:
- - blog
+ - making blog
 tags:
- - blog
+ - making blog
  - github page
  - jekyll
 last_modified_at: 2020-04-07
