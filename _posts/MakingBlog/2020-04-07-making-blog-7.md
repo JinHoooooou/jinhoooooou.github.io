@@ -101,7 +101,7 @@ last_modified_at : 2020-04-08
 
 태그는 해당 게시물의 세부 정보를 키워드로 설명하는 것이며, 해시태그와 유사한것으로 보면된다. 블로그에 게시물에 여러 태그를 추가할 수 있으며, 카테고리 1개, 태그 여러개 설정하는것을 추천한다.
 
-![image-20200408135525036](2020-04-07-making-blog-7.assets/image-20200408135525036.png)
+![category-and-tag]({{site.url}}/assets/images/2020-04-07-making-blog-7.assets/category-and-tag.png)
 
 링크로 연결될 페이지가 생성되어 있지 않기 때문에 클릭해도 Not Found를 출력할것이다.
 
@@ -159,7 +159,7 @@ main:
 
 
 
-![image-20200408140534305](2020-04-07-making-blog-7.assets/image-20200408140534305.png)
+![category-and-tag-menu]({{site.url}}/assets/images/2020-04-07-making-blog-7.assets/category-and-tag-menu.png)
 
 블로그 상단의 메뉴도 올바르게 나온다. Categories와 Tags를 누르면 YFM에 작성한 category와 tag별로 post가 분류된다.
 
@@ -180,6 +180,6 @@ taxonomy: making-blog
 
 permalink를 보면 categories의 하위 url이다. layout은 categories가 아니고 category이다. taxonomy가 making-blog인데 다른 post파일의 categories가 making-blog인 post만 모아서 보여준다.
 
-![image-20200408143827954](2020-04-07-making-blog-7.assets/image-20200408143827954.png)
+![apply]({{site.url}}/assets/images/2020-04-07-making-blog-7.assets/apply.png)
 
  
