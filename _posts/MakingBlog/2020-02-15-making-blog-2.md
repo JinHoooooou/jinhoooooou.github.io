@@ -1,14 +1,14 @@
 ---
-title: "Github page 블로그 만들기 - Ruby와 Jekyll 설치, 기본 블로그 생성"
+title: "Github page 블로그 만들기 - 2. Ruby와 Jekyll 설치, 기본 블로그 생성"
 excerpt: "ruby와 jekyll을 설치하고 로컬에서 샘플 블로그를 띄워본다. 샘플블로그는 github에 푸시하기전에 오탈자가 있는지, 링크가 제대로 되어있는지 확인하기 위해 사용한다."
 
 categories:
- - making blog
+ - making-blog
 tags:
- - making blog
- - github page
+ - making-blog
+ - github-page
  - jekyll
-last_modified_at: 2020-04-07
+last_modified_at: 2020-04-08
 ---
 
 

@@ -1,14 +1,14 @@
 ---
-title: "Github page 블로그 만들기 - Google Analytics 등록"
+title: "Github page 블로그 만들기 - 9. Google Analytics 등록"
 excerpt: "구글 웹 분석 도구인 Google Analytics 등록해보자"
 classes: wide
 categories:
- - making blog
+ - making-blog
 tags:
- - making blog
- - github page
+ - making-blog
+ - github-page
  - jekyll
-last_modified_at: 2020-04-07
+last_modified_at: 2020-04-08
 ---
 
 

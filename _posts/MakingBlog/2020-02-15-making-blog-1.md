@@ -3,12 +3,12 @@ title: "Github page 블로그 만들기 - 1.Prologue"
 excerpt: "블로그를 왜 만들었으며, 왜 Github page를 이용해서 만들었는지 내 생각을 작성했다. 그리고 간단하게 지킬이 무엇인지 설명한다."
 classes: wide
 categories:
- - making blog
+ - making-blog
 tags:
- - making blog
- - github page
+ - making-blog
+ - github-page
  - jekyll
-last_modified_at: 2020-04-07
+last_modified_at: 2020-04-08
 ---
 
 

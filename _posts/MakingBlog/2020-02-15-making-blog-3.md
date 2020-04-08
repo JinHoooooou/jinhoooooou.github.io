@@ -1,14 +1,14 @@
 ---
-title: "Github page 블로그 만들기 - Jekyll 테마선택, Github 호스팅"
+title: "Github page 블로그 만들기 - 3. Jekyll 테마선택, Github 호스팅"
 excerpt: "Jekyll테마중 minimal mistake을 적용하고, 적용한 블로그를 내 github repository에 업로드하여 실제 블로그를 운영해보자"
 
 categories:
- - making blog
+ - making-blog
 tags:
- - making blog
- - github page
+ - making-blog
+ - github-page
  - jekyll
-last_modified_at: 2020-04-07
+last_modified_at: 2020-04-08
 ---
 
 

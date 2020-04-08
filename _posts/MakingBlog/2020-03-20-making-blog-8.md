@@ -1,14 +1,14 @@
 ---
-title: "Github page 블로그 만들기 - Google Search Console 등록"
+title: "Github page 블로그 만들기 - 8. Google Search Console 등록"
 excerpt: "블로그에 구글 검색엔진인 Google Search Console을 등록해보자"
 classes: wide
 categories:
- - making blog
+ - making-blog
 tags:
- - making blog
- - github page
+ - making-blog
+ - github-page
  - jekyll
-last_modified_at: 2020-04-07
+last_modified_at: 2020-04-08
 ---
 
 
