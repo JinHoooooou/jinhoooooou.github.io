@@ -46,7 +46,7 @@ last_modified_at: 2020-04-20
     ```
     
   * 실제 코드
-  
+
     ```java
     import java.util.ArrayList;
     
@@ -56,10 +56,9 @@ last_modified_at: 2020-04-20
         return 0;
       }
     }
-  ```
-  
+    ```
   * 리팩토링 1
-  
+
     ```java
     import java.util.ArrayList;
     
@@ -74,12 +73,11 @@ last_modified_at: 2020-04-20
         return peopleInBus;
       }
     }
-  ```
-  
-  * for문을 돌면서 각 int[] element의 첫번째 element는 탄 사람 수, 두번째 element는 내린 사람 수 이므로 계속 더해줬다.
-  
+    ```
+    * for문을 돌면서 각 int[] element의 첫번째 element는 탄 사람 수, 두번째 element는 내린 사람 수 이므로 계속 더해줬다.
+
   * 리팩토링 2 - 식을 한번으로 줄이고, 향상된 for문 사용
-  
+
     ```java
     import java.util.ArrayList;
     
