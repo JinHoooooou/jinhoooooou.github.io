@@ -1,6 +1,6 @@
 ---
-title: "[Spring boot] TDD로 실제 프로젝트 진행해보기 - 알라딘 책 검색"
-excerpt: "알고리즘 문제풀때 TDD로 진행했는데 실제 프로젝트에서도 적용할 수 있을까??"
+title: "[Spring boot] TDD로 실제 프로젝트 진행해보기 - String 출력 👉 Json형태로 리턴"
+excerpt: "String으로 yes or no만 출력했던 것에서 Json형태로 status와 message로 출력해보자"
 classes: wide
 categories:
  - Spring boot
