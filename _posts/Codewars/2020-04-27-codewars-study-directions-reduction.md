@@ -159,7 +159,7 @@ last_modified_at: 2020-04-27
     }
     ```
     
-    * `replace()`메서드로 SOUTH NORTH, NORTH SOUTH를 삭제하면 EAST만 남기 때문에 "EAST"를 String으로 만들어 리턴했다.
+    * `replace()`메서드로 SOUTH NORTH, NORTH SOUTH를 삭제하면 EAST만 남기 때문에 "EAST"를 String 배열로 만들어 리턴했다.
     
   * 리팩토링 - 상수 추출
 
