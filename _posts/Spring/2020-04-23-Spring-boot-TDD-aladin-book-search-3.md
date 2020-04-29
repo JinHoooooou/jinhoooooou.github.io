@@ -159,6 +159,55 @@ last_modified_at: 2020-04-23
 
   * 실제 코드에서 \<div class="Search3_Result">가 없을 경우 404, 있을 경우 200을 출력해야하기 때문에, 단순히 size()를 0, 1로 mocking을 했다. 
   * 실제로 이렇게 하니 테스트도 통과했고, Jsoup을 이용하여 connect하는 시간도 없어서 테스트가 빠르게 통과했다.
+  
+* 리팩토링 - Given에서 Mocking하는 부분이 중복되기 때문에 메서드로 추출했다.
+
+  ```java
+  import static org.mockito.Mockito.*;
+  
+  class BookSearchTest {
+    
+    private static final int RESULT_FAIL_SIZE = 0;
+    private static final int RESULT_SUCCESS_SIZE = 1;
+    Document mockCrawlingResult = mock(Document.class);
+    Elements mockSearch3Result = mock(Elements.class);
+    BookSearch booksearch = new BookSearch();
+    
+    @Test
+    @DisplayName("알라딘 도서 검색창에 책을 검색했을때 결과가 나오지 않으면 status : 404, message : NOT_FOUND를 Json형태로 리턴한다.")
+    public void testShouldReturn404AndNotFoundWhenNotExistBookInAladin() throws JSONException {
+      // Given: 없는 책을 검색한다. (아무것도 입력안함)
+      setGivenMocking(RESULT_FAIL_SIZE);
+     
+      // When: searchBook 메서드를 호출한다.
+      JSONObject actual = bookSearch.searchBook(given);
+  
+      // Then: 404 status와 NOT_FOUND message를 리턴한다.
+      assertEquals(404, actual.getInt("status"));
+      assertEquals("NOT_FOUND", actual.get("message"));
+    }
+    @Test
+    @DisplayName("알라딘 도서 검색창에 책을 검색했을때 결과가 나오면 status : 200, message : OK를 Json형태로 리턴한다.")
+    public void testShouldReturn200AndOKWhenExistBookInAladin() throws JSONException {
+      // Given: 있는 책을 검색한다. ("refactoring")
+      setGivenMocking(RESULT_SUCCESS_SIZE);
+  
+      // When: searchBook 메서드를 호출한다.
+      JSONObject actual = bookSearch.searchBook(mockCrawlingResult);
+  
+      // Then: 200 status와 OK message를 리턴한다.
+      assertEquals(HttpStatusCode.OK.statusCode, getStatusCode(actual));
+      assertEquals(HttpStatusCode.OK.message, getMessage(actual));
+    }
+     
+    private void setGivenMocking(int searchResultSize) {
+      when(mockCrawlingResult.select("div#Search3_Result"))
+         .thenReturn(mockSearch3Result);
+      when(mockSearch3Result.size()).thenReturn(searchResultSize);
+    }
+    ...
+  }
+  ```
 
 ---
 
