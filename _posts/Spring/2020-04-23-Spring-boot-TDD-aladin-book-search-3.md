@@ -24,11 +24,9 @@ last_modified_at: 2020-04-23
 
 ---
 
+## 1. Mockito 사용법
 
-
-### 1. Mockito 사용법
-
-* **1.1 Mocl 객체만들기**
+* **1.1 Mock 객체만들기**
 
   ```java
   import static org.mockito.Mockito.*;
@@ -92,7 +90,7 @@ last_modified_at: 2020-04-23
     * atMost(n) : 최대 n이상 호출되었는지 확인한다.
     * timeout(millis) : 지정된 시간 안으로 최소 1번 호출 되었는지 확인한다.
 
-*  **1.4 검증 심화 - Argument Matcher**
+* **1.4 검증 심화 - Argument Matcher**
 
   ```java
   @Test
@@ -113,7 +111,7 @@ last_modified_at: 2020-04-23
 
 ---
 
-### 2. 알라딘 프로젝트에 적용
+## 2. 알라딘 프로젝트에 적용
 
 * Given에 있던 `Jsoup.connect(url).get()`을 없애고 Mock객체를 생성한다.
 
