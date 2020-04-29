@@ -47,18 +47,16 @@ longestConsec({"it","wkppv","ixoyx", "3452", "zzzzzzzzzzzz"}, 3) 👉 ixoyx3452z
     
     * When없이 Then으로 처리해도 괜찮다고 생각해서 없앴다.
     
-* 실제 코드
-  
-    ```java
-    public class LongestConsec {
+  * 실제 코드
     
-      public static String longestConsec(String[] strarr, int k) {
-        return strarr.length == 0 ? "" : "no";
+      ```java
+      public class LongestConsec {
+      
+        public static String longestConsec(String[] strarr, int k) {
+          return strarr.length == 0 ? "" : "no";
+        }
       }
-    }
-    ```
-    
-  
+      ```
 
 ---
 
