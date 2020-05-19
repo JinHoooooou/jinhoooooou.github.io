@@ -78,17 +78,14 @@ last_modified_at: 2020-05-16
       // Then: Should return 15
       assertEquals(15, actual);
     }
-  ```
-  
-    
-  
+    ```
   * [실제 코드](https://github.com/JinHoooooou/codeWarsChallenge/commit/501b3fb150fec9405af54d8a6d45823e3ae95eae)
-  
+
     ```java
     import java.util.stream.IntStream;
-    
+      
     public class Max {
-    
+      
       public static int sequence(int[] arr) {
         if (arr.length == 0) {
           return 0;
@@ -97,9 +94,11 @@ last_modified_at: 2020-05-16
       }
     }
     ```
-  
+
+    
+
   * [리팩토링](https://github.com/JinHoooooou/codeWarsChallenge/commit/add6e0537a01f634bba5c543ef04404f914570e9)
-  
+
     ```java
     @Test
     @DisplayName("test should return 0 when input array empty") 
@@ -121,7 +120,7 @@ last_modified_at: 2020-05-16
       assertEquals(15, Max.sequence(given));
     }
     ```
-  
+
     * When 삭제하고 Then에 이어붙여줌
 
 * ### 테스트 3 - 입력 배열의 원소가 모두 음수일 때 0을 리턴한다.
