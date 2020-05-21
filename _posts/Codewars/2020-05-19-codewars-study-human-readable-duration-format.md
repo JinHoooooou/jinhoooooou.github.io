@@ -171,39 +171,39 @@ last_modified_at: 2020-05-19
     
     
     
-* [실제 코드](https://github.com/JinHoooooou/codeWarsChallenge/commit/75afba540d649d46295160ab8c65dcd30ec6e4c3)
-  
-  ```java
-    public class TimeFormatter {
-    
-      public static String formatDuration(int seconds) {
-        String result = "";
-        int hour = seconds / 3600;
-        int minute = seconds % 3600 / 60;
-        int second = seconds % 60;
-    
-        if (second > 0) {
-          result = second + (second > 1 ? " seconds" : " second");
-        }
-        if (minute > 0) {
+  * [실제 코드](https://github.com/JinHoooooou/codeWarsChallenge/commit/75afba540d649d46295160ab8c65dcd30ec6e4c3)
+
+    ```java
+      public class TimeFormatter {
+      
+        public static String formatDuration(int seconds) {
+          String result = "";
+          int hour = seconds / 3600;
+          int minute = seconds % 3600 / 60;
+          int second = seconds % 60;
+      
           if (second > 0) {
-            result = " and " + result;
+            result = second + (second > 1 ? " seconds" : " second");
           }
-          result = minute + (minute > 1 ? " minutes" : " minute") + result;
-        }
-      if (hour > 0) {
-        if (minute > 0 || second > 0) {
-            result = " and" + result;
+          if (minute > 0) {
+            if (second > 0) {
+              result = " and " + result;
+            }
+            result = minute + (minute > 1 ? " minutes" : " minute") + result;
           }
-          result = hour + (hour > 1 ? " hours" : " hour") + result;
+        if (hour > 0) {
+          if (minute > 0 || second > 0) {
+              result = " and" + result;
+            }
+            result = hour + (hour > 1 ? " hours" : " hour") + result;
+          }
+      
+          return result;
         }
-    
-        return result;
       }
-    }
     ```
-    
-    * 이 test만 봤을 때 "1 hour"가 리턴되도록 구현했다.
+
+      * 이 test만 봤을 때 "1 hour"가 리턴되도록 구현했다.
 
 * ### 테스트 5 - 입력이 3662일때 "1 hour, 1 minute and 2 seconds"를 리턴한다.
 
