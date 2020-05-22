@@ -1,5 +1,5 @@
 ---
-title: "유튜브 리뷰 (05/20) - 코딩의 신 아샬"
+title: "유튜브 리뷰 (05/21) - 코딩의 신 아샬"
 excerpt: "실력 향상의 지름길"
 classes: wide
 categories:
