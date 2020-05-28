@@ -1,6 +1,6 @@
 ---
 title: "Codewars 문제풀기 (05/26)"
-excerpt: "Roman Numerals Encoder (6kyu)"
+excerpt: "Roman Numerals Encoder (5kyu)"
 classes: wide
 categories:
  - codewars
