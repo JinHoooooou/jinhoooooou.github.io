@@ -3,6 +3,7 @@ title: "간단한 카카오 API 이용 - 1. Setting"
 header:
   teaser: /assets/images/header/teaser-image/lion.png
 excerpt: "카카오 API를 이용해서 나에게 메시지를 보내보자"
+classes: wide
 
 categories:
  - 카카오-API
