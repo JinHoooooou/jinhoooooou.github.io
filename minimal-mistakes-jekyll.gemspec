@@ -1,4 +1,4 @@
-#a coding: utf-8
+# a coding: utf-8
 
 Gem::Specification.new do |spec|
   spec.name                    = "minimal-mistakes-jekyll"
