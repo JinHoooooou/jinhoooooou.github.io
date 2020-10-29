@@ -136,6 +136,18 @@ last_modified_at: 2020-02-26
 
    git clone 주소
 
+   > git clone시 github 아이디, 패스워드입력이 나오는데 매번 하기 귀찮을 수 있다. 이를 해결하기위해
+   >
+   > github ->  Profile -> Settings -> SSH and GPG keys ->에 공개키를 추가한다.
+   >
+   > 공개키는 ubuntu에서 cd ~/.ssh 후 "id_rsa.pub"라는 파일이 없다면
+   >
+   > ssh-keygen -t rsa로 생성한다. 뭐 확인하라고 뜨는데 걍 엔터쳐도무방
+   >
+   > https://proni.tistory.com/entry/%F0%9F%90%A7-Ubuntu-%EA%B3%B5%EA%B0%9C%ED%82%A4-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0참고
+   >
+   > 생성 후 cat ~/.ssh/id_rsa.pub 입력하면 터미널창에 나오는 값을 복붙해서 github에 등록
+
    ./mvnw clean package로 빌드 하면 많은 external 라이브러리를 설치
 
    > permission denied오류가 발생하는데 chmod +x mvnw 해주면 된다

@@ -1,4 +1,4 @@
-a coding: utf-8
+#a coding: utf-8
 
 Gem::Specification.new do |spec|
   spec.name                    = "minimal-mistakes-jekyll"
@@ -23,5 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.1"
 
   spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rake", "~> 12.3.3"
+  spec.add_development_dependency "rake", ">= 12.3.3"
 end

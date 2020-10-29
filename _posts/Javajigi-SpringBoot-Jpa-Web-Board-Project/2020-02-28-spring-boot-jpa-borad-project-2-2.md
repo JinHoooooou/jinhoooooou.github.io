@@ -29,3 +29,4 @@ last_modified_at: 2020-02-28
   * html form태그에 method=post속성추가, getMapping 대신 PostMapping 사용
 * 파라미터가 많아질 수 있으니 클래스로 추출
 * 클래스로 추출했을때 필드이름이 아니라 setter 메소드의 이름이 같아야 매핑이된다고함
+

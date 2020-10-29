@@ -24,6 +24,10 @@ last_modified_at: 2020-02-28
 
    Controller 패키지 생성
 
+   > 왜인지는 모르겠는데 'Controller' 패키지를 만들고 거기에 클래스 생성하면 안돌아가더라 
+   >
+   > 내가 패키지를 com.board.myboard로 만들고 board에 package를 생성하면 안되고 myboard에 패키지를 생성하니 됐다.
+
    Controller 패키지 내 WelcomeController 클래스 생성
 
    mustache 템플릿 엔진을 호출하기위해서 controller가 필요
@@ -34,7 +38,7 @@ last_modified_at: 2020-02-28
 
    규칙 : 메소드가 return하는 String에 대응하는 템플릿 디렉토리 내의 파일
 
-   --> 즉 return String이 "welcome"이라면 template디렉토리의 template.html을 호출한다.
+   --> 즉 return String이 "welcome"이라면 template디렉토리의 welcome.html을 호출한다.
 
    url 매핑을 @GetMapping으로 한다. (RequestMapping 후 Method를 get으로해도될듯)
 
