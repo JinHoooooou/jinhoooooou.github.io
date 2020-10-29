@@ -24,12 +24,12 @@ last_modified_at: 2020-10-29
 
 ### 2. 내 애플리케이션 - 애플리케이션 추가하기
 
-* ![my-application]({{site.url}}/assets/images/Kakao-Message-API/settings/my-application.png)
+* ![my-application]({{site.url}}/assets/images/Kakao-Message-API/my-application.png)
   * 앱 아이콘, 앱 이름, 사업자명 입력
 
 ### 3. 앱키 확인
 
-* ![app-key]({{site.url}}/assets/images/Kakao-Message-API/settings/app-key.png)
+* ![app-key]({{site.url}}/assets/images/Kakao-Message-API/app-key.png)
   * REST API 키 확인
 
 ### 4. 플랫폼 등록
@@ -48,7 +48,7 @@ last_modified_at: 2020-10-29
 
 * 활성화
 
-  ![kakao-login]({{site.url}}/assets/images/Kakao-Message-API/settings/kakao-login.png)
+  ![kakao-login]({{site.url}}/assets/images/Kakao-Message-API/kakao-login.png)
 
 ### 6.동의 항목
 
@@ -56,11 +56,11 @@ last_modified_at: 2020-10-29
 
 * '프로필 정보(닉네임/프로필사진)' 설정 클릭 후 동의, 동의, 목적 작성
 
-  ![profile]({{site.url}}/assets/images/Kakao-Message-API/settings/profile.png)
+  ![profile]({{site.url}}/assets/images/Kakao-Message-API/profile.png)
 
 * 접근권한 관리의 '카카오톡 메시지 전송' 설정 클릭 후 동의, 목적 작성
 
-  ![kakao-message-send]({{site.url}}/assets/images/Kakao-Message-API/settings/kakao-message-send.png)
+  ![kakao-message-send]({{site.url}}/assets/images/Kakao-Message-API/kakao-message-send.png)
 
 
 
