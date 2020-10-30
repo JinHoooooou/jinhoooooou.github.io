@@ -1,6 +1,6 @@
 ---
-title: "수식 최대화(10/30)"
-excerpt: "프로그래머스 level2, 2020 카카오 인턴십"
+title: "프로그래머스 - 수식 최대화(10/30)"
+excerpt: "level2, 2020 카카오 인턴십"
 classes: wide
 categories:
  - Programmers
